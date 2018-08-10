@@ -7,12 +7,12 @@ ___
 sudo apt update && sudo apt upgrade
 ```
 
-#### Instalação do Git
+#### Instalação do Git & Git-flow
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
-sudo apt install git
+sudo apt install git git-flow
 ```
 
 #### Instalar Oh-My-Zsh
@@ -21,6 +21,8 @@ sudo apt install git
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 ```
+
+*usar o tema [amuse]*
 
 #### Instalar o PHP 7.x
 
@@ -96,9 +98,34 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install yarn
 ```
 
-##### Instalar o FiraCode
+#### Instalar o FiraCode
 *Instalar a fonte FiraCode executando o arquivo **[install_firacode.sh](https://1drv.ms/u/s!AtALcZGIACkAoosL9wu5plQhcHw9OQ)** no terminal*
 
 ```
 sudo bash install_firacode.sh
+```
+
+#### Instalar o Laravel Installer
+
+```
+composer global require "laravel/installer"
+```
+
+#### Instalar o Vue-CLI
+```
+npm install --global @vue/cli
+```
+
+
+#### Aliases
+*Inserir no final do arquivo .zshrc*
+
+```
+alias cls="clear"
+alias edt="sudo nano $1"
+alias upt="sudo apt update"
+alias wrp="cd ~/workspace/$1"
+alias upg="sudo apt upgrade"
+alias inst="sudo apt install $1"
+alias avd="cd ~/Android/Sdk/emulator && emulator -avd $1"
 ```
