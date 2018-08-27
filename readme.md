@@ -1,20 +1,17 @@
 ## Configuração do ambiente
-___
-
+______
 #### Atualização do Sistema
 
 ```
 sudo apt update && sudo apt upgrade
-```
-
+______
 #### Instalação do Git & Git-flow
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
 sudo apt install git git-flow
-```
-
+______
 #### Instalar Oh-My-Zsh
 
 ```
@@ -22,8 +19,11 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
+
 *usar o tema [amuse]*
 
+______
 #### Instalar o PHP 7.x
 
 ```
@@ -32,7 +32,7 @@ sudo apt update
 sudo apt-get install php7.x-cli php7.x-fpm php-7.x-mysql php7.x-zip php7.x-dom php7.x-mbstring php7.x-curl
 
 ```
-
+______
 #### Instalar o Composer
 
 1. ***Baixar o Composer***
@@ -60,7 +60,7 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ```
 source ~/.bashrc
 ```
-
+______
 #### Instalar Nginx
 
 ```
@@ -76,14 +76,14 @@ apt install nginx
 sudo ufw enable
 sudo ufw allow 'Nginx HTTP'
 ```
-
+______
 #### Instalar o MySQL
 
 ```
 sudo apt install mysql-server
 mysql_secure_installation
 ```
-
+______
 #### Instalar NodeJS
 
 ```
@@ -91,36 +91,38 @@ curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt update
 sudo apt-get install -y nodejs
 ```
-
+______
 #### Instalar Yarn
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install yarn
 ```
-
+______
 #### Instalar o FiraCode
 *Instalar a fonte FiraCode executando o arquivo **[install_firacode.sh](https://1drv.ms/u/s!AtALcZGIACkAoosL9wu5plQhcHw9OQ)** no terminal*
 
 ```
 sudo bash install_firacode.sh
 ```
-
+______
 #### Instalar o Laravel Installer
 
 ```
 composer global require "laravel/installer"
 ```
+______
 
 #### Instalar o Vue-CLI
 ```
 npm install --global @vue/cli
 ```
-
+______
 
 #### Aliases
 *Inserir no final do arquivo .zshrc*
 
 ```
+# Alias
 alias cls="clear"
 alias edt="sudo nano $1"
 alias upt="sudo apt update"
@@ -128,4 +130,13 @@ alias wrp="cd ~/workspace/$1"
 alias upg="sudo apt upgrade"
 alias inst="sudo apt install $1"
 alias avd="cd ~/Android/Sdk/emulator && emulator -avd $1"
+alias restart-server="sudo service nginx restart && sudo service php7.2-fpm restart"
+
+# NPM
+alias nra="npm run android"
+alias ni="npm install $1"
+alias nr="npm remove $1"
+alias nu="npm update"
+alias nr="npm run $1"
+
 ```
