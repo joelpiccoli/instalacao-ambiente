@@ -45,7 +45,7 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-2. ****Instalar o Composer***
+2. ***Instalar o Composer***
 ```
 sudo mv composer.phar /usr/local/bin/composer
 ```
