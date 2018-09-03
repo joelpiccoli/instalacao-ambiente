@@ -4,6 +4,7 @@ ______
 
 ```
 sudo apt update && sudo apt upgrade
+```
 ______
 #### Instalação do Git & Git-flow
 
@@ -11,6 +12,7 @@ ______
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
 sudo apt install git git-flow
+```
 ______
 #### Instalar Oh-My-Zsh
 
@@ -138,5 +140,4 @@ alias ni="npm install $1"
 alias nr="npm remove $1"
 alias nu="npm update"
 alias nr="npm run $1"
-
 ```
