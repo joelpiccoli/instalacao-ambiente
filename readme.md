@@ -89,7 +89,7 @@ ______
 #### Instalar NodeJS
 
 ```
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt update
 sudo apt-get install -y nodejs
 ```
@@ -134,10 +134,4 @@ alias inst="sudo apt install $1"
 alias avd="cd ~/Android/Sdk/emulator && emulator -avd $1"
 alias restart-server="sudo service nginx restart && sudo service php7.2-fpm restart"
 
-# NPM
-alias nra="npm run android"
-alias ni="npm install $1"
-alias nr="npm remove $1"
-alias nu="npm update"
-alias nr="npm run $1"
 ```
