@@ -26,12 +26,12 @@ Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://gi
 *usar o tema [amuse]*
 
 ______
-#### Instalar o PHP 7.x
+#### Instalar o PHP 7.2
 
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt-get install php7.x-cli php7.x-fpm php-7.x-mysql php7.x-zip php7.x-dom php7.x-mbstring php7.x-curl
+sudo apt-get install php7.2-cli php7.2-fpm php-7.2-mysql php7.2-zip php7.2-dom php7.2-mbstring php7.2-curl
 
 ```
 ______
