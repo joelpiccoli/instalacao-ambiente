@@ -62,6 +62,16 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ```
 source ~/.zshrc
 ```
+
+#### *!! Problemas com timeout do composer !!*
+Algumas vezes, é possível que ao tentar baixar um package ou dar update em algum projeto você encare um erro de timeout ao conectar-se com o packalist. Nesse caso, abra o terminal e execute o seguinte comando:
+
+```
+sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
+```
+
+Iso fará com que o IPv4 tenha preferência sobre o IPv6. Isso deve resolver o problema de conexão com o packalist.
+
 ______
 #### Instalar Nginx
 
