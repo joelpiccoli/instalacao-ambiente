@@ -31,7 +31,7 @@ ______
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt-get install php7.2-cli php7.2-fpm php7.2-mysql php7.2-zip php7.2-dom php7.2-mbstring php7.2-curl
+sudo apt install -y php7.2-cli php7.2-fpm php7.2-mysql php7.2-zip php7.2-dom php7.2-mbstring php7.2-curl php7.2-gd
 
 ```
 ______
@@ -72,6 +72,22 @@ sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
 
 Iso fará com que o IPv4 tenha preferência sobre o IPv6. Isso deve resolver o problema de conexão com o Packagist.
 
+
+------
+
+#### Instalar o Java (arghh...)
+```
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
+Verifique a instalação do Java
+
+```
+sudo apt-get install oracle-java8-set-default
+```
+
 ______
 #### Instalar Nginx
 
@@ -101,13 +117,13 @@ ______
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt update
-sudo apt-get install -y nodejs
+sudo apt install -y nodejs
 ```
 ______
 #### Instalar Yarn
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-sudo apt-get update && sudo apt-get install yarn
+sudo apt update && sudo apt install yarn
 ```
 ______
 #### Instalar o FiraCode
