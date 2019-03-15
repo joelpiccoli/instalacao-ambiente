@@ -180,4 +180,4 @@ Assim os alias e functions estarão disponíveis para o sistema.
 
 ___
 
-**créditos à [Aaroh Mankad](https://gist.github.com/aarohmankad) pelas [functions](https://gist.github.com/aarohmankad/f17876d7550ff9dd1891727160b0f248)!*
+**créditos à [Aaroh Mankad](https://github.com/aarohmankad) pelas [functions](https://gist.github.com/aarohmankad/f17876d7550ff9dd1891727160b0f248)!*
