@@ -11,10 +11,10 @@ alias zshrf="source ~/.zshrc"
 alias restart-server="sudo service nginx restart && sudo service php7.3-fpm restart"
 
 #NPM
-nra="react-native run-android"
-ni="npm install $1"
-nup="npm update"
-ncls="npm cache clear --force"
+alias nra="react-native run-android"
+alias ni="npm install $1"
+alias nup="npm update"
+alias ncls="npm cache clear --force"
 
 # GIT
 alias gst="git status"
