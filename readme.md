@@ -166,30 +166,18 @@ npm i -g react-native-cli
 ```
 
 #### Aliases
-*Inserir no final do arquivo .zshrc*
-
+baixe os dois arquivos, **.bash_aliases** e **.bash_funcions*** na raiz do seu usuário e importe os dois dentro de .zshrc bem no final do arquivo.
 ```
-# Alias
-alias cls="clear"
-alias edt="sudo nano $1"
-alias upt="sudo apt update"
-alias wrp="cd ~/workspace/$1"
-alias upg="sudo apt upgrade"
-alias inst="sudo apt install $1"
-alias avd="cd ~/Android/Sdk/emulator && emulator -avd $1"
-alias restart-server="sudo service nginx restart && sudo service php7.3-fpm restart"
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
-# GIT
-alias gst="git status"
-alias gadd="git add ."
-alias gcm="git commit -m $1"
-alias gps="git push origin $1"
-alias gpl="git pull origin $1"
-
-# PHP
-alias art="php artisan $1"
-alias mkc="php artisan make:controller $1"
-alias mkm="php artisan make:model $1"
-
-
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
 ```
+Assim os alias e functions estarão disponíveis para o sistema.
+
+___
+
+**créditos à [Aaroh Mankad](https://gist.github.com/aarohmankad) pelas [functions](https://gist.github.com/aarohmankad/f17876d7550ff9dd1891727160b0f248)!*
