@@ -9,6 +9,7 @@ alias avd="cd ~/Android/Sdk/emulator && emulator -avd $1"
 alias zshconf="edt ~/.zshrc"
 alias zshrf="source ~/.zshrc"
 alias restart-server="sudo service nginx restart && sudo service php7.3-fpm restart"
+alias dl="rm -rf $1"
 
 #NPM
 alias nra="react-native run-android"
