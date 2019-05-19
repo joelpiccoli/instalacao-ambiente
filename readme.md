@@ -130,13 +130,17 @@ sudo apt install mysql-server
 mysql_secure_installation
 ```
 ______
-#### Instalar NodeJS
+#### Instalar NodeJS (e npm)
 
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt update
 sudo apt install -y nodejs
 ```
+
+Para corrigir o problema de permissão ao instalar pacotes globais com o npm siga as informações nesse link:
+> [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
+
 ______
 #### Instalar o FiraCode
 *Instalar a fonte FiraCode executando o arquivo **[install_firacode.sh](https://1drv.ms/u/s!AtALcZGIACkAoosL9wu5plQhcHw9OQ)** no terminal*
