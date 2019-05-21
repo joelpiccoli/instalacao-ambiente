@@ -129,6 +129,10 @@ ______
 sudo apt install mysql-server
 mysql_secure_installation
 ```
+
+Após instalar o mysql, você pode ter que alterar a forma de autenticação do root, se for o caso, siga o que está informado nessa resposta aqui do Stackoverflow:
+
+[ERROR 1698 (28000): Access denied for user 'root'@'localhost'](https://stackoverflow.com/a/42742610)
 ______
 #### Instalar NodeJS (e npm)
 
