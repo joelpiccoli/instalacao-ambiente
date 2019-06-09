@@ -31,7 +31,7 @@ ______
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php7.3-cli php7.3-fpm php7.3-mysql php7.3-zip php7.3-dom php7.3-mbstring php7.3-curl php7.3-gd php7.3-bcmath
+sudo apt install -y php7.3-cli php7.3-fpm php7.3-mysql php7.3-zip php7.3-dom php7.3-mbstring php7.3-curl php7.3-gd php7.3-bcmath php7.3-redis
 
 ```
 ______
