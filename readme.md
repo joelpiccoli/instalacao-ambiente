@@ -11,6 +11,11 @@ ______
 ```
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
+```
+
+**Se desejar instalar o [git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)**
+
+```
 sudo apt install git git-flow
 ```
 ______
@@ -26,12 +31,12 @@ Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://gi
 *usar o tema [amuse]*
 
 ______
-#### Instalar o PHP 7.3
+#### Instalar o PHP 7.4
 
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php7.3-cli php7.3-fpm php7.3-mysql php7.3-zip php7.3-dom php7.3-mbstring php7.3-curl php7.3-gd php7.3-bcmath php7.3-redis
+sudo apt install -y php7.4-cli php7.4-fpm php7.4-mysql php7.4-zip php7.4-dom php7.4-mbstring php7.4-curl php7.4-gd php7.4-bcmath php7.4-redis
 
 ```
 ______
@@ -133,7 +138,9 @@ mysql_secure_installation
 Após instalar o mysql, você pode ter que alterar a forma de autenticação do root, se for o caso, siga o que está informado nessa resposta aqui do Stackoverflow:
 
 [ERROR 1698 (28000): Access denied for user 'root'@'localhost'](https://stackoverflow.com/a/42742610)
+
 ______
+
 #### Instalar NodeJS (e npm)
 
 ```
@@ -146,6 +153,7 @@ Para corrigir o problema de permissão ao instalar pacotes globais com o npm sig
 > [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
 
 ______
+
 #### Instalar o FiraCode
 *Instalar a fonte FiraCode executando o arquivo **[install_firacode.sh](https://1drv.ms/u/s!AtALcZGIACkAoosL9wu5plQhcHw9OQ)** no terminal*
 
@@ -153,6 +161,7 @@ ______
 sudo bash install_firacode.sh
 ```
 ______
+
 #### Instalar o Laravel Installer
 
 ```
