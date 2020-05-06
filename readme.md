@@ -114,11 +114,9 @@ ______
 #### Instalar Nginx
 
 ```
-sudo -s
-nginx=stable
-add-apt-repository ppa:nginx/$nginx
-apt update
-apt install nginx
+sudo add-apt-repository ppa:nginx/stable
+sudo apt update
+sudo apt install -y nginx
 exit
 ```
 *adicionar o nginx ao firewall do linux*
