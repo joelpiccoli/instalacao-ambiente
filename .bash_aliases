@@ -16,6 +16,7 @@ alias nra="react-native run-android"
 alias ni="npm install $1"
 alias nup="npm update"
 alias ncls="npm cache clear --force"
+alias nru="npm run $1"
 
 # GIT
 alias gst="git status"
