@@ -16,7 +16,7 @@ sudo apt update
 **Se desejar instalar o [git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)**
 
 ```
-sudo apt install git git-flow
+sudo apt install -y git git-flow
 ```
 ______
 #### Instalar Oh-My-Zsh
@@ -28,15 +28,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
 
-*usar o tema [amuse]*
-
 ______
 #### Instalar o PHP 7.4
 
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php7.4-cli php7.4-fpm php7.4-mysql php7.4-zip php7.4-dom php7.4-mbstring php7.4-curl php7.4-gd php7.4-bcmath php7.4-redis
+sudo apt install -y php8.0-cli php8.0-fpm php8.0-mysql php8.0-zip php8.0-dom php8.0-mbstring php8.0-curl php8.0-gd php8.0-bcmath php8.0-redis
 
 ```
 ______
@@ -76,40 +74,6 @@ sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
 
 Iso fará com que o IPv4 tenha preferência sobre o IPv6. Isso deve resolver o problema de conexão com o Packagist.
 
-
-------
-
-#### Instalar o Java (arghh...)
-```
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt update
-sudo apt install oracle-java8-installer
-```
-
-Verifique a instalação do Java
-
-```
-sudo apt install oracle-java8-set-default
-```
-
-____
-#### Dar permissão do kvm no linux
-
-```
-sudo apt install qemu-kvm
-sudo adduser [username] kvm
-```
-
-Para verificar a propriedade do grupo
-```
-ls -al /dev/kvm
-```
-
-Para verificar quais usuários estão no grupo
-```
-grep kvm /etc/group
-```
-
 ______
 #### Instalar Nginx
 
@@ -133,8 +97,29 @@ sudo apt install mysql-server
 mysql_secure_installation
 ```
 
-Após instalar o mysql, você pode ter que alterar a forma de autenticação do root, se for o caso, siga o que está informado nessa resposta aqui do Stackoverflow:
+Após instalar o mysql, você pode ter que alterar a forma de autenticação do root, se for o caso, siga os proximos passos:
 
+
+```
+sudo mysql -u root #entrar como root já que estamos instalando pela primeira vez
+```
+
+Execute o seguinte:
+
+```
+mysql> USE mysql;
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+```
+
+Atualize o MySQL
+
+```
+sudo service mysql restart
+```
+
+Fonte:
 [ERROR 1698 (28000): Access denied for user 'root'@'localhost'](https://stackoverflow.com/a/42742610)
 
 ______
@@ -166,19 +151,6 @@ ______
 composer global require "laravel/installer"
 ```
 ______
-
-#### Instalar o Vue-CLI
-```
-npm i -g @vue/cli
-```
-______
-
-#### Instalar o React-Native CLI
-
-```
-npm i -g react-native-cli
-
-```
 
 #### Aliases
 baixe os dois arquivos, **.bash_aliases** e **.bash_funcions*** na raiz do seu usuário e importe os dois dentro de .zshrc bem no final do arquivo.
