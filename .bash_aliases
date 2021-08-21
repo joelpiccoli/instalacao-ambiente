@@ -7,7 +7,6 @@ alias upg="sudo apt upgrade"
 alias wrp="cd ~/workspace"
 alias zshconf="edt ~/.zshrc"
 alias zshrf="source ~/.zshrc"
-alias restart-server="sudo service nginx restart && sudo service php7.3-fpm restart"
 alias dl="rm -rf $1"
 
 #NPM
@@ -25,7 +24,11 @@ alias gpl="git pull origin $1"
 alias gth="git stash $1"
 
 # PHP
-alias php-serve="php -S localhost:8000 $1"
 alias art="php artisan $1"
-alias mkc="php artisan make:controller $1"
-alias mkm="php artisan make:model $1"
+
+# DOCKER
+alias dc="docker-compose $1"
+alias dcu="dc up -d"
+alias dcd="dc down"
+alias dps="docker ps"
+alias dex="docker exec $1"
