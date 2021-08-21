@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
 
 ______
-#### Instalar o PHP 7.4
+#### Instalar o PHP 8.0
 
 ```
 sudo add-apt-repository ppa:ondrej/php
