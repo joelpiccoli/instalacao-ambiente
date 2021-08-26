@@ -1,4 +1,6 @@
 # Configuração do ambiente
+Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Nginx funcionando no Linux.
+
 
 - [Atualização do Sistema](#atualização-do-sistema)
 - [Instalação do Git](#instalação-do-git)
