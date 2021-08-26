@@ -1,12 +1,23 @@
 # Configuração do ambiente
+
+- [Atualização do Sistema](#atualização-do-sistema)
+- [Instalação do Git](#instalação-do-git)
+- [Instalar Oh-My-Zsh](#instalar-oh-my-zsh)
+- [Instalar o PHP 8.0](#instalar-o-php-8)
+- [Instalar o Composer](#instalar-o-composer)
+- [Instalar Nginx](#instalar-nginx)
+- [Instalar o MySQL](#instalar-o-mysql)
+- [Instalar NodeJS](#instalar-nodejs)
+- [Aliases](#aliases)
+
 ______
-#### Atualização do Sistema
+## Atualização do Sistema
 
 ```
 sudo apt update && sudo apt upgrade
 ```
 ______
-#### Instalação do Git & Git-flow
+## Instalação do Git
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
@@ -19,7 +30,7 @@ sudo apt update
 sudo apt install -y git git-flow
 ```
 ______
-#### Instalar Oh-My-Zsh
+## Instalar Oh My Zsh
 
 ```
 sudo apt install zsh
@@ -29,7 +40,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
 
 ______
-#### Instalar o PHP 8.0
+## Instalar o PHP 8
 
 ```
 sudo add-apt-repository ppa:ondrej/php
@@ -38,7 +49,7 @@ sudo apt install -y php8.0-cli php8.0-fpm php8.0-mysql php8.0-zip php8.0-dom php
 
 ```
 ______
-#### Instalar o Composer
+## Instalar o Composer
 
 1. ***Baixar o Composer***
 ```
@@ -65,7 +76,7 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 source ~/.zshrc
 ```
 
-#### *!! Problemas com timeout do composer !!*
+### *!! Problemas com timeout do composer !!*
 Algumas vezes, é possível que ao tentar baixar um package ou dar update em algum projeto você encare um erro de timeout ao conectar-se com o Packagist. Nesse caso, abra o terminal e execute o seguinte comando:
 
 ```
@@ -75,7 +86,7 @@ sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
 Iso fará com que o IPv4 tenha preferência sobre o IPv6. Isso deve resolver o problema de conexão com o Packagist.
 
 ______
-#### Instalar Nginx
+## Instalar Nginx
 
 ```
 sudo add-apt-repository ppa:nginx/stable
@@ -89,7 +100,7 @@ sudo ufw enable
 sudo ufw allow 'Nginx HTTP'
 ```
 ______
-#### Instalar o MySQL
+## Instalar o MySQL
 
 ```
 sudo apt install mysql-server
@@ -129,7 +140,7 @@ Fonte:
 
 ______
 
-#### Instalar NodeJS (e npm)
+## Instalar NodeJS
 
 ```
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
@@ -142,22 +153,7 @@ Para corrigir o problema de permissão ao instalar pacotes globais com o npm sig
 
 ______
 
-#### Instalar o FiraCode
-*Instalar a fonte FiraCode executando o arquivo **[install_firacode.sh](https://1drv.ms/u/s!AtALcZGIACkAoosL9wu5plQhcHw9OQ)** no terminal*
-
-```
-sudo bash install_firacode.sh
-```
-______
-
-#### Instalar o Laravel Installer
-
-```
-composer global require "laravel/installer"
-```
-______
-
-#### Aliases
+## Aliases
 baixe os dois arquivos, **.bash_aliases** e **.bash_funcions*** na raiz do seu usuário e importe os dois dentro de .zshrc bem no final do arquivo.
 ```
 if [ -f ~/.bash_aliases ]; then
