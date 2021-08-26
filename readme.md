@@ -81,7 +81,6 @@ ______
 sudo add-apt-repository ppa:nginx/stable
 sudo apt update
 sudo apt install -y nginx
-exit
 ```
 *adicionar o nginx ao firewall do linux*
 
@@ -94,10 +93,13 @@ ______
 
 ```
 sudo apt install mysql-server
-mysql_secure_installation
 ```
 
-Após instalar o mysql, você pode ter que alterar a forma de autenticação do root, se for o caso, siga os proximos passos:
+Após isso execute
+```
+mysql_secure_installation
+```
+Se for pedido o password você pode ter que alterar a forma de autenticação do root, se for o caso, siga os proximos passos:
 
 
 ```
@@ -118,6 +120,9 @@ Atualize o MySQL
 ```
 sudo service mysql restart
 ```
+
+Após execute novamente o comando `mysql_secure_installation` e deve funcionar ok.
+
 
 Fonte:
 [ERROR 1698 (28000): Access denied for user 'root'@'localhost'](https://stackoverflow.com/a/42742610)
