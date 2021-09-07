@@ -116,7 +116,7 @@ Se for pedido o password você pode ter que alterar a forma de autenticação do
 
 
 ```
-sudo mysql -u root #entrar como root já que estamos instalando pela primeira vez
+sudo mysql -u root
 ```
 
 Execute o seguinte:
