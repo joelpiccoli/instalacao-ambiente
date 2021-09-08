@@ -47,7 +47,7 @@ ______
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php8.0-cli php8.0-fpm php8.0-mysql php8.0-zip php8.0-dom php8.0-mbstring php8.0-curl php8.0-gd php8.0-bcmath php8.0-redis
+sudo apt install -y php8.0-cli php8.0-fpm php8.0-mysql php8.0-zip php8.0-dom php8.0-mbstring php8.0-curl php8.0-gd php8.0-bcmath php8.0-redis php8.0-xdebug
 
 ```
 ______
