@@ -11,7 +11,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Instalar o MySQL](#instalar-o-mysql)
 - [Instalar NodeJS](#instalar-nodejs)
 - [Aliases](#aliases)
-- [WSL Considerações](#wsl-consideracoes)
+- [WSL Considerações](#wsl-consideraçoes)
 
 ______
 ## Atualização do Sistema
