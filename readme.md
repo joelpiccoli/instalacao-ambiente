@@ -11,6 +11,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Instalar o MySQL](#instalar-o-mysql)
 - [Instalar NodeJS](#instalar-nodejs)
 - [Aliases](#aliases)
+- [WSL Considerações](#wsl-consideracoes)
 
 ______
 ## Atualização do Sistema
@@ -171,3 +172,30 @@ Assim os alias e functions estarão disponíveis para o sistema.
 ___
 
 **créditos à [Aaroh Mankad](https://github.com/aarohmankad) pelas [functions](https://gist.github.com/aarohmankad/f17876d7550ff9dd1891727160b0f248)!*
+
+
+______
+
+## WSL Considerações
+Devido a algumas limitações na arquitetura do WSL, não é possível iniciar serviços automaticamente pelo systemd. Para contornar isso podemos iniciar esses serviços a partir do nosso arquivo `.bashrc` ou `.zshrc` e desabilitar a necessidade de perguntar a senha do sudo para esses serviços.
+
+Edite o arquivo `/etc/sudoers` e adicione as seguintes linhas:
+
+```
+%sudo ALL=NOPASSWD: /etc/init.d/mysql
+%sudo ALL=NOPASSWD: /etc/init.d/nginx
+%sudo ALL=NOPASSWD: /etc/init.d/php7.2-fpm
+```
+
+Após isso edite seu arquivo `.zshrc` ou `.bashrc` e adicione as seguintes linhas:
+
+```
+sudo /etc/init.d/nginx start
+sudo /etc/init.d/mysql start
+sudo /etc/init.d/php7.2-fpm start
+```
+
+fonte: [Criando um ambiente de desenvolvimento PHP com WSL](https://www.treinaweb.com.br/blog/criando-um-ambiente-de-desenvolvimento-php-com-wsl)
+
+
+
