@@ -48,7 +48,7 @@ ______
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php8.0-cli php8.0-fpm php8.0-mysql php8.0-zip php8.0-dom php8.0-mbstring php8.0-curl php8.0-gd php8.0-bcmath php8.0-redis php8.0-xdebug
+sudo apt install -y php8.1-cli php8.1-fpm php8.1-mysql php8.1-zip php8.1-dom php8.1-mbstring php8.1-curl php8.1-gd php8.1-bcmath php8.1-redis php8.1-xdebug
 
 ```
 ______
@@ -184,7 +184,7 @@ Edite o arquivo `/etc/sudoers` e adicione as seguintes linhas:
 ```
 %sudo ALL=NOPASSWD: /etc/init.d/mysql
 %sudo ALL=NOPASSWD: /etc/init.d/nginx
-%sudo ALL=NOPASSWD: /etc/init.d/php7.2-fpm
+%sudo ALL=NOPASSWD: /etc/init.d/php8.1-fpm
 ```
 
 Após isso edite seu arquivo `.zshrc` ou `.bashrc` e adicione as seguintes linhas:
@@ -192,7 +192,7 @@ Após isso edite seu arquivo `.zshrc` ou `.bashrc` e adicione as seguintes linha
 ```
 sudo /etc/init.d/nginx start
 sudo /etc/init.d/mysql start
-sudo /etc/init.d/php7.2-fpm start
+sudo /etc/init.d/php8.1-fpm start
 ```
 
 fonte: [Criando um ambiente de desenvolvimento PHP com WSL](https://www.treinaweb.com.br/blog/criando-um-ambiente-de-desenvolvimento-php-com-wsl)
