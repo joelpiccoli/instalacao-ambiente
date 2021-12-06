@@ -5,7 +5,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Atualização do Sistema](#atualização-do-sistema)
 - [Instalação do Git](#instalação-do-git)
 - [Instalar Oh-My-Zsh](#instalar-oh-my-zsh)
-- [Instalar o PHP 8.0](#instalar-o-php-8)
+- [Instalar o PHP 8.1](#instalar-o-php-8)
 - [Instalar o Composer](#instalar-o-composer)
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
