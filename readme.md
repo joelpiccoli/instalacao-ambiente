@@ -9,7 +9,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Instalar o Composer](#instalar-o-composer)
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
-- [Instalar NodeJS](#instalar-nodejs)
+- [Instalar NodeJS](#instalar-node)
 - [Aliases](#aliases)
 - [WSL Considerações](#wsl-considerações)
 
@@ -143,16 +143,19 @@ Fonte:
 
 ______
 
-## Instalar NodeJS
+## Instalar Node
 
 ```
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt update
 sudo apt install -y nodejs
 ```
 
 Para corrigir o problema de permissão ao instalar pacotes globais com o npm siga as informações nesse link:
 > [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
+
+Sobre a versão
+> Aqui estamos instalando a última versão LTS do NodeJS, mas você pode instalar a que achar melhor só trocando a versão. Mais [informações aqui](https://github.com/nodesource/distributions/blob/master/README.md#debinstall).
 
 ______
 
