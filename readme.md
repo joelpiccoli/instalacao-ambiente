@@ -10,6 +10,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
 - [Instalar NodeJS](#instalar-node)
+- [Usando o Linux Valet](#usando-o-linux-valet)
 - [Aliases](#aliases)
 - [WSL Considerações](#wsl-considerações)
 
@@ -158,6 +159,31 @@ Sobre a versão
 > Aqui estamos instalando a última versão LTS do NodeJS, mas você pode instalar a que achar melhor só trocando a versão. Mais [informações aqui](https://github.com/nodesource/distributions/blob/master/README.md#debinstall).
 
 ______
+
+## Usando o Linux Valet
+Para disponibilizar os seus projetos em ambiente local de desenvolvimento você pode usar o [Linux Valet](https://github.com/cpriego/valet-linux).
+
+Para fazer isso, instale o mesmo com o composer de forma global.
+```
+composer global require cpriego/valet-linux
+```
+
+Após, verifique que todas as dependências estão instaladas.
+```
+sudo apt install -y network-manager libnss3-tools jq xsel
+```
+
+Só então pode executar o comando pra instalar o valet.
+```
+valet install
+```
+
+Agora é só ir até a pasta onde seus projetos estão localizados e executar o comando `valet park`.
+
+> Veja a documentação oficial sobre o [Laravel Valet](https://laravel.com/docs/valet).
+
+* Thanks to [Carlos Priego](https://github.com/cpriego) for making our lives even easier on Linux! ;)
+
 
 ## Aliases
 baixe os dois arquivos, **.bash_aliases** e **.bash_funcions*** na raiz do seu usuário e importe os dois dentro de .zshrc bem no final do arquivo.
