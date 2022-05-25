@@ -41,7 +41,22 @@ sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-Após instalar o Oh-my.zsh instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
+Após instalar o Oh-my-zsh vamos instalar o pacote do [ZSH-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions). Primeiro clone o projeto.
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Após isso edite o arquivo `~/.zshrc` e adicione o plugin a lista de plugins.
+
+```
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+)
+```
+
+Depois é só reabrir o terminal ou executar o comando `source ~/.zshrc` para dar reload.
 
 ______
 ## Instalar o PHP 8
