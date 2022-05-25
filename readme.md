@@ -72,7 +72,7 @@ ______
 
 1. ***Baixar o Composer***
 ```
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+curl -sS https://getcomposer.org/installer -o composer-setup.php
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
