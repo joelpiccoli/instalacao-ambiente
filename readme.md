@@ -139,10 +139,10 @@ sudo mysql -u root
 Execute o seguinte:
 
 ```
-mysql> USE mysql;
-mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
-mysql> FLUSH PRIVILEGES;
-mysql> exit;
+USE mysql;
+UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
 ```
 
 Atualize o MySQL
