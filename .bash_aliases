@@ -1,5 +1,6 @@
 # General
 alias cls="clear"
+alias clsa="clear && ls -la"
 alias edt="sudo nano $1"
 alias inst="sudo apt install $1"
 alias upt="sudo apt update"
