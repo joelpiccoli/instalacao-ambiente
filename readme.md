@@ -59,12 +59,12 @@ plugins=(
 Depois é só reabrir o terminal ou executar o comando `source ~/.zshrc` para dar reload.
 
 ______
-## Instalar o PHP 8
+## Instalar o PHP 8.x
 
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php8.1-cli php8.1-fpm php8.1-mysql php8.1-zip php8.1-dom php8.1-mbstring php8.1-curl php8.1-gd php8.1-bcmath php8.1-redis php8.1-xdebug
+sudo apt install -y php8.2-cli php8.2-fpm php8.2-mysql php8.2-zip php8.2-dom php8.2-mbstring php8.2-curl php8.2-gd php8.2-bcmath php8.2-redis php8.2-xdebug
 
 ```
 ______
