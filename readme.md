@@ -5,7 +5,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Atualização do Sistema](#atualização-do-sistema)
 - [Instalação do Git](#instalação-do-git)
 - [Instalar Oh-My-Zsh](#instalar-oh-my-zsh)
-- [Instalar o PHP 8.1](#instalar-o-php-8)
+- [Instalar o PHP 8.2](#instalar-o-php)
 - [Instalar o Composer](#instalar-o-composer)
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
@@ -59,7 +59,7 @@ plugins=(
 Depois é só reabrir o terminal ou executar o comando `source ~/.zshrc` para dar reload.
 
 ______
-## Instalar o PHP 8.x
+## Instalar o PHP
 
 ```
 sudo add-apt-repository ppa:ondrej/php
