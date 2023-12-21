@@ -5,7 +5,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Atualização do Sistema](#atualização-do-sistema)
 - [Instalação do Git](#instalação-do-git)
 - [Instalar Oh-My-Zsh](#instalar-oh-my-zsh)
-- [Instalar o PHP 8.2](#instalar-o-php)
+- [Instalar o PHP 8.3](#instalar-o-php)
 - [Instalar o Composer](#instalar-o-composer)
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
@@ -64,7 +64,7 @@ ______
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install -y php8.2-cli php8.2-fpm php8.2-mysql php8.2-zip php8.2-dom php8.2-mbstring php8.2-curl php8.2-gd php8.2-bcmath php8.2-redis php8.2-xdebug php8.2-memcached
+sudo apt install -y php8.3-cli php8.3-fpm php8.3-mysql php8.3-zip php8.3-dom php8.3-mbstring php8.3-curl php8.3-gd php8.3-bcmath php8.3-redis php8.3-xdebug php8.3-memcached
 
 ```
 ______
