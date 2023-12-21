@@ -94,9 +94,8 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 ```
 source ~/.zshrc
 ```
-
-### *!! Problemas com timeout do composer !!*
-Algumas vezes, é possível que ao tentar baixar um package ou dar update em algum projeto você encare um erro de timeout ao conectar-se com o Packagist. Nesse caso, abra o terminal e execute o seguinte comando:
+> [!IMPORTANT]
+> Algumas vezes, é possível que ao tentar baixar um package ou dar update em algum projeto você encare um erro de timeout ao conectar-se com o Packagist. Nesse caso, abra o terminal e execute o seguinte comando:
 
 ```
 sudo sh -c "echo 'precedence ::ffff:0:0/96 100' >> /etc/gai.conf"
@@ -156,6 +155,7 @@ ______
 ## Instalar o Node
 
 Sobre a versão
+> [!IMPORTANT]
 > Aqui estamos instalando a última versão LTS do NodeJS, mas você pode instalar a que achar melhor só trocando a versão. Mais [informações aqui](https://github.com/nodesource/distributions/blob/master/README.md#debinstall).
 
 
@@ -184,6 +184,7 @@ sudo apt-get install nodejs -y
 ```
 
 
+> [!WARNING]
 > Para corrigir o problema de permissão ao instalar pacotes globais com o npm siga as informações nesse link:
 > [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
 
@@ -234,7 +235,8 @@ ___
 
 ______
 
-## WSL Considerações
+> [!IMPORTANT]
+> ## WSL Considerações
 Devido a algumas limitações na arquitetura do WSL, não é possível iniciar serviços automaticamente pelo systemd. Para contornar isso podemos iniciar esses serviços a partir do nosso arquivo `.bashrc` ou `.zshrc` e desabilitar a necessidade de perguntar a senha do sudo para esses serviços.
 
 Edite o arquivo `/etc/sudoers` e adicione as seguintes linhas:
