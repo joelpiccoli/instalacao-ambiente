@@ -9,7 +9,7 @@ Passo a passo rápido de como ter um ambiente com Git, PHP, MySQL, NodeJS e Ngin
 - [Instalar o Composer](#instalar-o-composer)
 - [Instalar Nginx](#instalar-nginx)
 - [Instalar o MySQL](#instalar-o-mysql)
-- [Instalar NodeJS](#instalar-node)
+- [Instalar o NodeJS](#instalar-o-node)
 - [Usando o Linux Valet](#usando-o-linux-valet)
 - [Aliases](#aliases)
 - [WSL Considerações](#wsl-considerações)
@@ -153,19 +153,39 @@ Fonte:
 
 ______
 
-## Instalar Node
-
-```
-curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt update
-sudo apt install -y nodejs
-```
-
-Para corrigir o problema de permissão ao instalar pacotes globais com o npm siga as informações nesse link:
-> [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
+## Instalar o Node
 
 Sobre a versão
 > Aqui estamos instalando a última versão LTS do NodeJS, mas você pode instalar a que achar melhor só trocando a versão. Mais [informações aqui](https://github.com/nodesource/distributions/blob/master/README.md#debinstall).
+
+
+1. Faca o download e importaćão do Nodesource GPG key
+
+```sh
+sudo apt-get update
+sudo apt-get install -y ca-certificates curl gnupg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+```
+
+2. Crie o repositório deb
+
+```sh
+NODE_MAJOR=20
+echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+```
+
+
+3. Atualize os repositórios e instale o node
+
+```sh
+sudo apt-get update
+sudo apt-get install nodejs -y
+```
+
+
+> Para corrigir o problema de permissão ao instalar pacotes globais com o npm siga as informações nesse link:
+> [Resolving eacces permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)
 
 ______
 
